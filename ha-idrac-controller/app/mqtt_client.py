@@ -6,7 +6,7 @@ import json
 import re # For sanitizing fan names
 
 class MqttClient:
-    def __init__(self, client_id="ha_idrac_controller"):
+    def __init__(self, client_id="ha_idrac_controller_2"):
         self.client_id = client_id
         self.client = mqtt.Client(client_id=self.client_id, protocol=mqtt.MQTTv311)
         self.broker_address = "core-mosquitto" # Default, will be overridden by main.py
